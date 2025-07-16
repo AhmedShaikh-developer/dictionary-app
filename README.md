@@ -2,9 +2,9 @@
 
 *Empowering Language Mastery Through Instant Definitions*
 
-[![Last Commit](https://img.shields.io/github/last-commit/your-username/dictionary-app)]()
+[![Last Commit](https://img.shields.io/github/last-commit/AhmedShaikh-developer/dictionary-app)]()
 [![JavaScript](https://img.shields.io/librariesio/languages/javascript)]()
-[![Languages](https://img.shields.io/github/languages/count/your-username/dictionary-app)]()
+[![Languages](https://img.shields.io/github/languages/count/AhmedShaikh-developer/dictionary-app)]()
 
 ---
 
