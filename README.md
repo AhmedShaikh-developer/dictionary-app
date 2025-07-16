@@ -26,3 +26,37 @@
 
 ## Project Structure
 
+dictionary-app/
+├─ api/
+│ └─ lookup/[word].js # Vercel serverless function (Node.js + Axios)
+├─ client/
+│ ├─ public/ # Static assets and index.html
+│ ├─ src/
+│ │ ├─ components/ # LookupForm, DefinitionList, ErrorMessage
+│ │ ├─ pages/ # HomePage
+│ │ ├─ App.jsx
+│ │ ├─ main.jsx # Entry point (imports index.css)
+│ │ └─ index.css # Tailwind directives
+│ ├─ tailwind.config.js
+│ ├─ postcss.config.js
+│ ├─ vite.config.js
+│ └─ package.json # React/Vite dependencies & scripts
+├─ vercel.json # Vercel build & route configuration
+├─ package.json # Root file (build script for monorepo)
+└─ README.md # This file
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** v16+ & **npm**
+- (Optional) **Vercel CLI** if deploying without Git
+
+### Local Development
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/your-username/dictionary-app.git
+   cd dictionary-app
