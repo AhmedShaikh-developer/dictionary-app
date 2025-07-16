@@ -24,28 +24,6 @@
 
 ---
 
-## Project Structure
-
-dictionary-app/
-├─ api/
-│ └─ lookup/[word].js # Vercel serverless function (Node.js + Axios)
-├─ client/
-│ ├─ public/ # Static assets and index.html
-│ ├─ src/
-│ │ ├─ components/ # LookupForm, DefinitionList, ErrorMessage
-│ │ ├─ pages/ # HomePage
-│ │ ├─ App.jsx
-│ │ ├─ main.jsx # Entry point (imports index.css)
-│ │ └─ index.css # Tailwind directives
-│ ├─ tailwind.config.js
-│ ├─ postcss.config.js
-│ ├─ vite.config.js
-│ └─ package.json # React/Vite dependencies & scripts
-├─ vercel.json # Vercel build & route configuration
-├─ package.json # Root file (build script for monorepo)
-└─ README.md # This file
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -60,3 +38,17 @@ dictionary-app/
    ```bash
    git clone https://github.com/your-username/dictionary-app.git
    cd dictionary-app
+
+2. **Install root dependencies (for API functions)**
+   
+   ```bash
+   npm install
+
+3. **Run React client**
+
+   ```bash
+  cd client
+  npm install
+  npm run dev
+
+The app will be served at http://localhost:5173. API calls to /api/lookup/:word are proxied to your local serverless functions.
